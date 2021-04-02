@@ -1,0 +1,28 @@
+
+
+.content {
+    height: calc(100vh - 8.625rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(252, 252, 252);
+}
+
+.content h1 {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: .15rem;
+    color: rgb(232 22 22);
+    margin-bottom: 1rem;
+}
+
+.content p {
+    font-family: 'Poppins', sans-serif;
+    color: #807c7e;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+

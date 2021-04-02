@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>NT Search</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/contact.css">
+    
+</head>
+<body>
+    
+
+    <nav>
+        <div class="brand">                
+            <a href="/">
+                <i id="logo" class="fas fa-bible"></i>
+            </a>
+            <a href="/">
+                <h1>NT Search</h1>
+            </a>
+        </div>
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/resources">Resources</a>                
+            <a href="/contact">Contact</a>
+        </div>
+        <div id="burger">
+            <div class="line-1"></div>
+            <div class="line-2"></div>                
+            <div class="line-3"></div>
+        </div>
+    </nav>
+
+
+    <div id="content">
+        <div class="form-container">
+            <div class="form-heading">
+                <h1 class="title">Contact Us</h1>
+                <p>We'd love to get in touch!</p>
+            </div>
+
+            <form action="/contact" method="post">
+                <div class="form-body">
+                    <div class="input-lines">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter Full Name">
+                    </div>
+    
+                    <div class="input-lines">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" placeholder="Enter Email">
+                    </div>
+    
+                    <div class="input-lines">
+                        <label for="phone">Phone:</label>
+                        <input type="text" id="phone" name="phone" placeholder="Enter Phone # (optional)">
+                    </div>
+                    
+                    <div class="input-lines last-input">
+                        <label for="message">Message:</label>
+                        <div class="contact-text">
+                            <textarea name="contactMessage" id="contact-message" placeholder="Your Message . . ."></textarea>
+                        </div>
+                    </div>
+    
+                    <button type="submit">Submit<i id="arrow" class="fas fa-long-arrow-alt-right"></i></button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+    <footer>
+        <p>Made with <span>❤️</span> by Nikita <span id="lastName">Pryymak</span> | </p>
+        <a href="https://twitter.com/NikitaPryymak" class="fab fa-twitter"></a>
+        <a href="https://www.instagram.com/nikitapryymak/?hl=en" class="fab fa-instagram"></a>
+        <a href="https://github.com/nikitapryymak?tab=repositories" class="fab fa-github"></a>
+        <a href="mailto: nikitapryymak29@gmail.com" class="fas fa-envelope"></a>
+    </footer>
+
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>

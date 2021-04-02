@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    padding: 1rem 5% 1rem 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: .15rem;
+    background-color: rgba(15, 15, 15, .9);
+    color: white;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand a {
+    text-decoration: none;
+    color: white;
+}
+
+#logo {
+    color: white;
+    font-size: 2rem;
+    margin-right: .75rem;
+}
+
+nav h1 {
+    font-size: 2.5rem;
+}
+
+nav .links a {
+    font-size: 1.75rem;
+    text-decoration: none;
+    margin-left: 1.2rem;
+    color: white;
+}
+
+nav .links a:hover {
+    color: rgb(232 22 22);
+}
+
+#burger {
+    position: absolute;
+    top: 1.75rem;
+    right: 2rem;
+    display: none;   /* display: flex @media query */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+#burger div {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(220, 220, 220);
+    border-radius: 10px;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    body {
+        overflow: hidden;
+    }
+    #burger {
+        display: flex;
+    }
+    .links {
+        z-index: 10;
+        position: absolute;
+        top: 5rem;   /* height of navbar */
+        right: -50%;
+        width: 50%;
+        height: calc(100vh - 5rem);
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(15, 15, 15, 1);
+        transition: all .5s ease;
+    }
+    nav .links a {
+        margin: 0;
+        padding: 2rem 0;
+        text-align: center;
+    }
+    .links a:hover {
+        background: rgba(229, 229, 229, 0.1);
+    }
+}
+
+/* NAVBAR ANIMATION */
+.links-active {
+    right: 0;
+}
+
+/* BURGER ANIMATION */
+.x-animation.line-1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.x-animation.line-2 {
+    display: none;
+}
+.x-animation.line-3 {
+    transform: rotate(45deg) translate(-9px, -6px);
+}
+
+
+@media screen and (max-width: 405px) {
+    body {
+        overflow: hidden;
+    }
+    #lastName {
+        display: none;
+    }
+    footer p {
+        font-size: .95rem;
+    }
+}
+

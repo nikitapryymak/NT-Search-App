@@ -1,0 +1,41 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NT Search</title>
+
+     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&display=swap" rel="stylesheet">
+
+     <link rel="stylesheet" href="css/bible.css">
+</head>
+<body>
+    
+    <%- include('partials/nav') %> 
+    
+    <div class="passage">
+        <div class="passageTitle">
+            <h1> <%= userReq %>  </h1>
+        </div>
+        <div class="passageBody">
+            <p>
+                <% dataResponse.verses.forEach(item => { %>
+                    <span id="verseNum"> <%= item.verse %> </span>
+                    <span id="verse"> <%= item.text %>  </span>
+                <% }) %>
+            </p>
+        </div>
+    </div>
+
+
+
+    <%- include('partials/footer') %>
+    <script src="index.js"></script>
+</body>
+</html>
+

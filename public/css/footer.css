@@ -1,0 +1,42 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(15, 15, 15, .9);
+    padding: 1rem 0;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: .05rem;
+}
+
+footer span {
+    margin-right: .30rem;
+}
+
+footer a {
+    font-size: 1.15rem;
+    text-decoration: none;
+    color: white;
+    margin: 0 .5rem;
+    padding-top: .25rem;
+}
+
+@media screen and (max-width: 405px) {
+    #lastName {
+        display: none;
+    }
+    footer p {
+        font-size: .95rem;
+    }
+}

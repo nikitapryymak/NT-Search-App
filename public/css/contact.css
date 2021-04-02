@@ -1,0 +1,178 @@
+
+body {
+    background-image: url('https://wallpaperforu.com/wp-content/uploads/2020/05/matt-gross-9aCkSl6YcXg-unsplash1920x1200.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* max-width: 40rem; */
+    margin: 4rem auto 5rem;
+}
+
+.form-container {
+    background-color: rgb(252, 252, 252);
+    width: 40rem;
+    border: 1px solid rgb(195, 194, 194);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.form-heading {
+padding: 2rem;
+text-align: center;
+background-color: rgb(252, 252, 252);
+border-bottom: 1px solid rgb(195, 194, 194);
+border-top-left-radius: 4px;
+border-top-right-radius: 4px;
+}
+
+.title {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: .15rem;
+    color: rgb(232 22 22);
+}
+
+.form-body {
+    padding: 3rem 4.5rem 3rem 10rem;
+}
+
+/* INPUT PLACEHOLDER STYLES */
+input, select {
+    font-size: 100%;
+    outline: none;
+    border: none;
+}
+textarea {
+    outline: none;
+    border: none;
+    resize: none;
+}
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+        ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-family: 'Poppins', sans-serif;
+            font-size: .85rem;
+        }
+        ::-moz-placeholder {
+            /* Firefox 19+ */
+            font-family: 'Poppins', sans-serif;
+            font-size: .85rem;
+        }
+        :-ms-input-placeholder {
+            /* IE 10+ */
+            font-family: 'Poppins', sans-serif;
+            font-size: .85rem;
+        }
+        :-moz-placeholder {
+            /* Firefox 18- */
+            font-family: 'Poppins', sans-serif;
+            font-size: .85rem;
+        }
+
+
+.input-lines {
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #b2b2b2;
+    margin-bottom: 2.75rem;
+}
+
+.input-lines label {
+    position: absolute;
+    top: 0.3rem;
+    left: -6.2rem;
+    width: 5rem;
+    text-align: right;
+    font-weight: bold;
+    letter-spacing: .04rem;
+}
+
+.input-lines input {
+    width: 100%;
+    height: 2.2rem;
+    border: none;
+    background-color: rgb(252, 252, 252);
+    /* border-bottom: 1px solid #b2b2b2; */
+}
+
+.input-lines.last-input {
+    display: flex;
+    margin-bottom: 0;
+}
+
+.contact-text {
+    width: 26rem;
+    min-height: 7rem;
+}
+
+.contact-text textarea {
+    width: 100%;
+    height: 100%;
+    padding: .3rem;
+    font-size: .9rem;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4rem;
+    background-color: rgb(252, 252, 252);
+    /* border-bottom: 1px solid #b2b2b2; */
+}
+
+form button {
+    margin-top: 2rem;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.25rem;
+    width: 8rem;
+    height: 50px;
+    background-color: rgb(232 22 22);
+    border-radius: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.2;
+    color: #fff;
+    cursor: pointer;
+}
+
+#arrow {
+    font-size: 1.4rem;
+    margin-left: .5rem;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    body {
+        overflow: hidden;
+    }
+    .form-container {
+        width: 26rem;
+    }
+    .form-body {
+        padding: 3rem 1rem 3rem 7.5rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    body {
+        overflow: hidden;
+    }
+    .form-container {
+        width: 20rem;
+    }
+    .form-body {
+        padding: 3rem 1rem 3rem 7.5rem;
+    }
+}
+
+

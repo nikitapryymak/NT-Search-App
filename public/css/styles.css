@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+    background-image: url('https://wallpaperforu.com/wp-content/uploads/2020/05/matt-gross-9aCkSl6YcXg-unsplash1920x1200.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: .15rem;
+    z-index: -1;
+}
+
+nav {
+    padding: 1rem 5% 1rem 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(15, 15, 15, .8);
+    color: white;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand a {
+    text-decoration: none;
+    color: white;
+}
+
+#logo {
+    color: white;
+    font-size: 2rem;
+    margin-right: .75rem;
+}
+
+nav h1 {
+    font-size: 2.5rem;
+}
+
+nav .links a {
+    font-size: 1.75rem;
+    text-decoration: none;
+    margin-left: 1.2rem;
+    color: white;
+}
+
+nav .links a:hover {
+    color: rgb(232 22 22);
+}
+
+
+/* MAIN CONTENT */
+.content {
+    padding-top: 10%;
+    text-align: center;
+}
+
+.content .title {
+    color: rgb(232 22 22);
+    font-size: 3.5rem;
+}
+
+.content .subtitle {
+    color: #807c7e;
+    font-size: 1.2rem;
+    margin-top: .25rem;
+    margin-bottom: 1.45rem;
+}
+
+form input {
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1rem;
+    width: 10rem;
+    height: 2.35rem;
+    padding: .25rem;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: .8125rem;
+}
+::-moz-placeholder {
+    /* Firefox 19+ */
+    font-size: .8125rem;
+}
+:-ms-input-placeholder {
+    /* IE 10+ */
+    font-size: .8125rem;
+}
+:-moz-placeholder {
+    /* Firefox 18- */
+    font-size: .8125rem;
+}
+
+form button {
+    width: 5rem;
+    height: 2.35rem;
+    margin-left: .5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+
+/* RESOURCES */
+.resources h1 {
+    color: rgb(232 22 22);
+    font-size: 2.15rem;
+    margin-top: 4rem;
+}
+
+.resources a {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: initial;
+    font-size: 1.3rem;
+}
+
+.resourceBox {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 4rem;
+}
+
+.firstTwo, .lastTwo {
+    display: flex;
+
+}
+
+.resourceLinks {
+    display: flex;
+    flex-direction: column;
+    margin-right: 3rem;
+}
+
+.lastLink {
+    margin-right: 0;
+}
+
+.resourceLinks img {
+    height: 125px;
+    width: 125px;
+    margin-bottom: .8rem;
+}
+
+.resourceLinks a:hover {
+color: #bdbdbd;
+}
+
+
+
+
+/* FOOTER */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(15, 15, 15, .8);
+    padding: 1rem 0;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: .05rem;
+}
+
+footer span {
+    margin-right: .30rem;
+}
+
+footer a {
+    font-size: 1.15rem;
+    text-decoration: none;
+    color: white;
+    margin: 0 .5rem;
+    padding-top: .25rem;
+}
+
+/* TOGGLER */
+#burger {
+    position: absolute;
+    top: 1.75rem;
+    right: 2rem;
+    display: none;   /* display: flex @media query */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+#burger div {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(220, 220, 220);
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 405px) {
+    #lastName {
+        display: none;
+    }
+    footer p {
+        font-size: .95rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .resourceBox {
+        flex-direction: column;
+    }
+    #gty, #desGod {
+        margin-right: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    #lig, #refNet {
+        margin-left: 1.5rem;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        overflow-x: hidden;
+    }
+    #burger {
+        display: flex;
+    }
+    .links {
+        z-index: 10;
+        position: absolute;
+        top: 5rem;   /* height of navbar */
+        right: -50%;
+        width: 50%;
+        height: calc(100vh - 5rem);
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(15, 15, 15, .9);
+        transition: all .5s ease;
+    }
+    nav .links a {
+        margin: 0;
+        padding: 2rem 0;
+        text-align: center;
+    }
+    .links a:hover {
+        background: rgba(229, 229, 229, 0.1);
+    }
+}
+
+/* NAVBAR ANIMATION */
+.links-active {
+    right: 0;
+}
+
+/* BURGER ANIMATION */
+.x-animation.line-1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.x-animation.line-2 {
+    display: none;
+}
+.x-animation.line-3 {
+    transform: rotate(45deg) translate(-9px, -6px);
+}
+

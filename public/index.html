@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <title>NT Search</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <div id="main">
+        <nav>
+            <div class="brand">
+                <a href="/">
+                    <i id="logo" class="fas fa-bible"></i>
+                </a>
+                <a href="/">
+                    <h1>NT Search</h1>
+                </a>
+            </div>
+            <div class="links">
+                    <a href="/">Home</a>
+                    <a href="/resources">Resources</a>
+                    <a href="/contact">Contact</a>
+            </div>
+            <div id="burger">
+                <div class="line-1"></div>
+                <div class="line-2"></div>
+                <div class="line-3"></div>
+            </div>
+        </nav>
+
+        <div class="content">
+            <h1 class="title">Search</h1>
+            <p class="subtitle">Enter a book, verse, or passage below!</p>
+            <form action="/search" method="POST">
+                <input type="text" name="userReq" placeholder="Book, Verse, Passage....">
+                <button type="submit">Search</button>
+            </form>
+
+            <div class="resources">
+                <h1>More Resources</h1>
+
+                <div class="resourceBox">
+                    <div class="firstTwo">
+                        <div id="gty" class="resourceLinks">
+                            <a href="https://www.gty.org/">
+                                <img src="img/gty.png" alt="GTY">
+                            </a>
+                            <a href="https://www.gty.org/">Grace To You</a>
+                        </div>
+    
+                        <div id="lig" class="resourceLinks">
+                            <a href="https://www.ligonier.org/">
+                                <img src="img/ligonier.png" alt="LIG">
+                            </a>
+                            <a href="https://www.ligonier.org/">Ligonier</a>
+                        </div>
+                    </div>
+
+                    <div class="lastTwo">
+                        <div id="desGod" class="resourceLinks">
+                            <a href="https://www.desiringgod.org/">
+                                <img src="img/desgod.png" alt="des">
+                            </a>
+                            <a href="https://www.desiringgod.org/">Desiring God</a>
+                        </div>
+    
+                        <div id="refNet" class="resourceLinks lastLink">
+                            <a href="https://refnet.fm/">
+                                <img src="img/refnet.png" alt="refnet">
+                            </a>
+                            <a href="https://refnet.fm/">RefNet</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Made with <span>❤️</span> by Nikita <span id="lastName">Pryymak</span> | </p>
+            <a href="https://twitter.com/NikitaPryymak" class="fab fa-twitter"></a>
+            <a href="https://www.instagram.com/nikitapryymak/?hl=en" class="fab fa-instagram"></a>
+            <a href="https://github.com/nikitapryymak?tab=repositories" class="fab fa-github"></a>
+            <a href="mailto: nikitapryymak29@gmail.com" class="fas fa-envelope"></a>
+        </footer>
+
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
